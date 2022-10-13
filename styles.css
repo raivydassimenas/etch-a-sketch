@@ -7,6 +7,6 @@
     margin: 50px auto;
 }
 
-.item:hover {
+.red {
     background-color: #ff0000;
 }
