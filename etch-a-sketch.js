@@ -9,7 +9,6 @@ const container = document.querySelector('.container');
 for (let i = 0; i < 4; i++) {
     for (let j = 0; j < 4; j++) {
         const elem = document.createElement('div');
-        elem.textContent = i * 4 + j;
         elem.classList.add('item');
         container.appendChild(elem);
     }
@@ -24,5 +23,16 @@ sizeButton.addEventListener('click', (e) => {
     }
     while (container.firstChild) {
         container.removeChild(container.lastChild);
+    }
+    const length = 800 / size;
+    container.style.gridTemplateColumns = `repeat(${size}, ${length}px)`;
+    container.style.gridTemplateRows = `repeat(${size}, ${length}px`;
+
+    for (let i = 0; i < size; i++) {
+        for (let j = 0; j < size; j++) {
+            const elem = document.createElement('div');
+            elem.classList.add('item');
+            container.appendChild(elem);
+        }
     }
 });
