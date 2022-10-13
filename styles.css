@@ -10,3 +10,25 @@
 .red {
     background-color: #ff0000;
 }
+
+.item {
+    border: 2px solid #ff0000;
+}
+
+.size-button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
