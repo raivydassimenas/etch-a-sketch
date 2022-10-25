@@ -6,8 +6,8 @@ document.addEventListener('mouseover', (e) => {
 
 const container = document.querySelector('.container');
 
-for (let i = 0; i < 4; i++) {
-    for (let j = 0; j < 4; j++) {
+for (let i = 0; i < 16; i++) {
+    for (let j = 0; j < 16; j++) {
         const elem = document.createElement('div');
         elem.classList.add('item');
         container.appendChild(elem);
